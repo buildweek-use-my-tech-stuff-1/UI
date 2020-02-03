@@ -1,3 +1,24 @@
+.social {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    @media @tablet {
+        width: 80%;
+    }
+
+    a {
+        color: @secondary-col;
+
+        &:hover {
+            color: @secondary-light;
+        }
+    }
+}
+
 footer {
     font-size: 2rem;
     background-color: @primary-col;

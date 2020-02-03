@@ -84,6 +84,11 @@ body {
   font-size: 4rem;
   margin-bottom: 2rem;
 }
+@media only screen and (max-width: 800px) {
+  .container h2 {
+    font-size: 1.8rem;
+  }
+}
 @media only screen and (max-width: 500px) {
   .container h2 {
     font-size: 1.6rem;
@@ -92,10 +97,52 @@ body {
 .container p {
   font-size: 2rem;
 }
+@media only screen and (max-width: 800px) {
+  .container p {
+    font-size: 1.4rem;
+  }
+}
 @media only screen and (max-width: 500px) {
   .container p {
     font-size: 1.4rem;
   }
+}
+.mb-4 {
+  width: 60%;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 800px) {
+  .mb-4 {
+    width: 80%;
+    font-size: 1.2rem;
+  }
+}
+.btn-primary {
+  background-color: #d35400;
+  border-color: #d35400;
+}
+.btn-primary:hover {
+  background-color: #e67e22;
+  border-color: #e67e22;
+}
+.social {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+@media only screen and (max-width: 800px) {
+  .social {
+    width: 80%;
+  }
+}
+.social a {
+  color: #d35400;
+}
+.social a:hover {
+  color: #e67e22;
 }
 footer {
   font-size: 2rem;
