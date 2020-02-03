@@ -1,0 +1,91 @@
+@import 'vars.less';
+@import 'mixin.less';
+@import 'anim.less';
+
+
+
+
+body {
+    background-color: @background-col;
+    font-size: 62.5%;
+    height: 100%;
+    min-width: 100%;
+}
+.navbar {
+    background-color: @primary-col;
+    .navbar-brand {
+        color: @accent-col;
+        &:hover {
+            color: @secondary-col;
+        }
+            &:focus {
+                outline: none;
+            }
+            @media @tablet {
+                display: none;
+            }
+    }
+    ul {
+    width: 50%;
+    margin-right: auto;
+    border: none;
+    li {
+    @media @mobile {
+        text-align: center;
+        min-width: 100%;
+        border-bottom: 1px solid @accent-col;
+        border-top: 1px solid @accent-col;
+    }
+    }
+    a {
+        text-decoration: none;
+        border: none;
+        &:focus {
+            outline: none;
+        }
+    }
+    .nav-item {
+    margin: 0 auto;
+    text-decoration: none;
+
+    }
+    h3, h4 {
+        color: @secondary-col;
+        &:hover {
+            color: @accent-col;
+        }
+    }
+    @media @tablet {
+        min-width: 100%;
+    }
+
+    }
+}
+ // end nav
+
+.para-header {
+    .parallax(40rem, ~'url("../img/para1.jpg")');
+}
+.para-body {
+    .parallax(40rem, ~'url("../img/para2.jpg")');
+}
+.para-footer {
+    .parallax(30rem, ~'url("../img/para3.jpg")')
+}
+
+.container {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    h2 {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+    p {
+        font-size: 2rem;
+    }
+}
+footer {
+    font-size: 2rem;
+    background-color: @primary-col;
+    color: @secondary-col;
+}
