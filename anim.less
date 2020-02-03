@@ -1,0 +1,56 @@
+.first-text {
+    font-size: 4.4rem;
+    position: relative; //relative to parent element so it stays in place when scrolling
+    width: 100%;
+    text-align: center;
+    top: 4rem; //how much space there is from the top i.e how far down should it go
+    opacity: 0; //0 = dissapear after anim plays
+    animation-name: topFadeOut1; //anim to play
+    animation-duration: 4s; //how long the anim takes to complete in seconds
+    color: white;
+  }
+  .second-text {
+    font-size: 4.4rem;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    top: 8rem;
+    opacity: 1; //1 = stay visible after anim plays
+    animation-name: topFadeOut;
+    animation-duration: 6s; 
+    color: white;
+  }
+
+  @keyframes topFadeOut1 {
+    0% { //how far along is the anim (just starting)
+      position: relative;
+      top: -3rem; //starting position
+      opacity: 0; //start invisible
+    }
+    75% { //(3/4 done)
+      position: relative;
+      top: 4rem; //where it should move to over the course of the anim up to this point
+      opacity: 1; //fade in
+    }
+    100% { //(finished)
+    position: relative;
+      opacity: 0; //fade out
+    }
+  }
+
+  @keyframes topFadeOut {
+    0% {
+      position: relative;
+      top: -3rem;
+      opacity: 0;
+    }
+    75% {
+      position: relative;
+      top: 8rem;
+      opacity: 1;
+    }
+    100% {
+    position: relative;
+      opacity: 1; //stay visible
+    }
+  }
