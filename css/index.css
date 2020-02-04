@@ -142,13 +142,20 @@ body {
   padding-bottom: 60px;
 }
 .container .rev-head {
-  padding: 60px 0 45px;
+  padding: 20px 0 60px;
 }
 .container .rev-head p {
+  color: #333;
   font-size: 2rem;
   text-align: center;
 }
-.card {
+.container .my-card-cont {
+  border: 5px solid #2c3e50;
+  background-color: #2c3e50;
+  border-radius: 3px;
+  padding: 2%;
+}
+.container .my-card-cont .card {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -157,31 +164,31 @@ body {
   margin: 40px 0;
   padding: 15px;
 }
-.card .person-img {
+.container .my-card-cont .card .person-img {
   max-width: 200px;
 }
-.card .person-img img {
+.container .my-card-cont .card .person-img img {
   max-width: 100%;
   border-radius: 50%;
   opacity: 0.9;
   transition: 0.25s ease-in;
 }
-.card .person-img img:hover {
+.container .my-card-cont .card .person-img img:hover {
   transform: scale(1.05);
   opacity: 1;
 }
-.card .person-text {
+.container .my-card-cont .card .person-text {
   width: 90%;
   margin-left: 20px;
 }
-.card .person-text p {
+.container .my-card-cont .card .person-text p {
   font-size: 1.2rem;
 }
-.card .person-text q {
+.container .my-card-cont .card .person-text q {
   font-size: 1.4rem;
 }
 @media only screen and (max-width: 500px) {
-  .card .person-text q {
+  .container .my-card-cont .card .person-text q {
     font-size: 1.2rem;
   }
 }
