@@ -1,0 +1,35 @@
+.para-header {
+  .parallax(40rem, ~'url("../img/para1.jpg")');
+}
+.para-body {
+  .parallax(40rem, ~'url("../img/para2.jpg")');
+}
+.para-footer {
+  .parallax(30rem, ~'url("../img/para3.jpg")')
+}
+
+.container {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  h2 {
+      font-size: 4rem;
+      margin-bottom: 2rem;
+
+      @media @tablet {
+        font-size: 1.8rem;
+      }
+      @media @mobile {
+          font-size: 1.6rem;
+      }
+  }
+  p {
+      font-size: 2rem;
+
+      @media @tablet {
+        font-size: 1.4rem;
+      }
+      @media @mobile {
+          font-size: 1.4rem;
+      }
+  }
+}

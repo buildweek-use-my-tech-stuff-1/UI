@@ -1,0 +1,210 @@
+body {
+  background-color: #f5fcfd;
+  font-size: 62.5%;
+  height: 100%;
+  min-width: 100%;
+}
+.navbar {
+  background-color: #2c3e50;
+}
+.navbar .navbar-brand {
+  color: #bdc3c7;
+}
+.navbar .navbar-brand:hover {
+  color: #d35400;
+}
+.navbar .navbar-brand:focus {
+  outline: none;
+}
+@media only screen and (max-width: 800px) {
+  .navbar .navbar-brand {
+    display: none;
+  }
+}
+.navbar ul {
+  width: 50%;
+  margin-right: auto;
+  border: none;
+}
+@media only screen and (max-width: 500px) {
+  .navbar ul li {
+    text-align: center;
+    min-width: 100%;
+    padding: 15px;
+    border-bottom: 1px solid #bdc3c7;
+  }
+  .navbar ul li:first-child {
+    border-top: 1px solid #bdc3c7;
+  }
+}
+.navbar ul a {
+  text-decoration: none;
+  border: none;
+}
+.navbar ul a:focus {
+  outline: none;
+}
+.navbar ul .nav-item {
+  margin: 0 auto;
+  text-decoration: none;
+}
+.navbar ul h3,
+.navbar ul h4 {
+  color: #d35400;
+}
+.navbar ul h3:hover,
+.navbar ul h4:hover {
+  color: #bdc3c7;
+}
+@media only screen and (max-width: 800px) {
+  .navbar ul {
+    min-width: 100%;
+  }
+}
+.para-header {
+  background: url("../img/para1.jpg") no-repeat center / cover;
+  height: 40rem;
+  background-attachment: fixed;
+}
+.para-body {
+  background: url("../img/para2.jpg") no-repeat center / cover;
+  height: 40rem;
+  background-attachment: fixed;
+}
+.para-footer {
+  background: url("../img/para3.jpg") no-repeat center / cover;
+  height: 30rem;
+  background-attachment: fixed;
+}
+.container {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.container h2 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+@media only screen and (max-width: 800px) {
+  .container h2 {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .container h2 {
+    font-size: 1.6rem;
+  }
+}
+.container p {
+  font-size: 2rem;
+}
+@media only screen and (max-width: 800px) {
+  .container p {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .container p {
+    font-size: 1.4rem;
+  }
+}
+.mb-4 {
+  width: 60%;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 800px) {
+  .mb-4 {
+    width: 80%;
+    font-size: 1.2rem;
+  }
+}
+.btn-primary {
+  background-color: #d35400;
+  border-color: #d35400;
+}
+.btn-primary:hover {
+  background-color: #e67e22;
+  border-color: #e67e22;
+}
+.social {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+@media only screen and (max-width: 800px) {
+  .social {
+    width: 80%;
+  }
+}
+.social a {
+  color: #d35400;
+}
+.social a:hover {
+  color: #e67e22;
+}
+footer {
+  font-size: 2rem;
+  background-color: #2c3e50;
+  color: #d35400;
+}
+@media only screen and (max-width: 500px) {
+  footer {
+    font-size: 1.6rem;
+  }
+}
+.first-text {
+  font-size: 4.4rem;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  top: 4rem;
+  opacity: 0;
+  animation-name: topFadeOut1;
+  animation-duration: 4s;
+  color: white;
+}
+.second-text {
+  font-size: 4.4rem;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  top: 8rem;
+  opacity: 1;
+  animation-name: topFadeOut;
+  animation-duration: 6s;
+  color: white;
+}
+@keyframes topFadeOut1 {
+  0% {
+    position: relative;
+    top: -3rem;
+    opacity: 0;
+  }
+  75% {
+    position: relative;
+    top: 4rem;
+    opacity: 1;
+  }
+  100% {
+    position: relative;
+    opacity: 0;
+  }
+}
+@keyframes topFadeOut {
+  0% {
+    position: relative;
+    top: -3rem;
+    opacity: 0;
+  }
+  75% {
+    position: relative;
+    top: 8rem;
+    opacity: 1;
+  }
+  100% {
+    position: relative;
+    opacity: 1;
+  }
+}
