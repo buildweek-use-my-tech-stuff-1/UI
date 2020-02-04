@@ -125,10 +125,58 @@ body {
   background-color: #e67e22;
   border-color: #e67e22;
 }
+.col-md-3 .mb-0 p {
+  font-size: 1.2rem;
+}
+.col-md-6,
+.col-md-12 {
+  font-size: 1.2rem;
+}
+.btn-primary {
+  margin-top: 25px;
+  padding: 5px 25px;
+}
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 40px 0;
+  padding: 15px;
+}
+.card .person-img {
+  max-width: 200px;
+}
+.card .person-img img {
+  max-width: 100%;
+  border-radius: 50%;
+  opacity: 0.9;
+  transition: 0.25s ease-in;
+}
+.card .person-img img:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+.card .person-text {
+  width: 90%;
+  margin-left: 20px;
+}
+.card .person-text p {
+  font-size: 1.2rem;
+}
+.card .person-text q {
+  font-size: 1.4rem;
+}
+@media only screen and (max-width: 500px) {
+  .card .person-text q {
+    font-size: 1.2rem;
+  }
+}
 .social {
   width: 50%;
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 15px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -153,6 +201,9 @@ footer {
   footer {
     font-size: 1.6rem;
   }
+}
+.footer-copyright {
+  font-size: 1.8rem;
 }
 .first-text {
   font-size: 4.4rem;
