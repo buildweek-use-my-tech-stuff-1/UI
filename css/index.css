@@ -108,7 +108,7 @@ body {
   }
 }
 .mb-4 {
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
 }
 @media only screen and (max-width: 800px) {
@@ -117,18 +117,101 @@ body {
     font-size: 1.2rem;
   }
 }
-.btn-primary {
-  background-color: #d35400;
-  border-color: #d35400;
+.mb-4 div.col-md-6,
+.mb-4 div.col-md-12 {
+  font-size: 1.2rem;
 }
-.btn-primary:hover {
-  background-color: #e67e22;
-  border-color: #e67e22;
+.mb-4 .col-md-3 .mb-0 li p {
+  font-size: 1.2rem;
+}
+.btn-primary {
+  background-color: #d35400 !important;
+  border-color: #d35400 !important;
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  background-color: #e67e22 !important;
+  border-color: #e67e22 !important;
+}
+.btn-primary {
+  margin-top: 25px;
+  padding: 5px 25px;
+}
+.container {
+  padding-bottom: 60px;
+}
+.container .rev-head {
+  padding: 20px 0 60px;
+}
+.container .rev-head p {
+  color: #333;
+  font-size: 2rem;
+  text-align: center;
+}
+.container .my-card-cont {
+  border: 5px solid #2c3e50;
+  background-color: #2c3e50;
+  border-radius: 3px;
+  padding: 2%;
+}
+.container .my-card-cont .card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 40px 0;
+  padding: 15px;
+}
+@media only screen and (max-width: 500px) {
+  .container .my-card-cont .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .my-card-cont .card:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+}
+.container .my-card-cont .card .person-img {
+  max-width: 200px;
+}
+.container .my-card-cont .card .person-img img {
+  max-width: 100%;
+  border-radius: 50%;
+  opacity: 0.9;
+  transition: 0.25s ease-in;
+}
+@media only screen and (max-width: 500px) {
+  .container .my-card-cont .card .person-img img {
+    margin-bottom: 30px;
+  }
+}
+.container .my-card-cont .card .person-img img:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+.container .my-card-cont .card .person-text {
+  width: 90%;
+  margin-left: 20px;
+}
+.container .my-card-cont .card .person-text p {
+  font-size: 1.2rem;
+}
+.container .my-card-cont .card .person-text q {
+  font-size: 1.4rem;
+}
+@media only screen and (max-width: 500px) {
+  .container .my-card-cont .card .person-text q {
+    font-size: 1.2rem;
+  }
 }
 .social {
   width: 50%;
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 15px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -153,6 +236,9 @@ footer {
   footer {
     font-size: 1.6rem;
   }
+}
+.footer-copyright {
+  font-size: 1.8rem;
 }
 .first-text {
   font-size: 4.4rem;

@@ -1,19 +1,35 @@
 .mb-4 {
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
 
   @media @tablet {
     width: 80%;
     font-size: 1.2rem;
   }
+
+  div.col-md-6,
+  div.col-md-12 {
+    font-size: 1.2rem;
+  }
+
+  .col-md-3 .mb-0 li {
+    p {
+      font-size: 1.2rem;
+    }
+  }
 }
 
 .btn-primary {
-  background-color: @secondary-col;
-  border-color: @secondary-col;
+  background-color: @secondary-col !important;
+  border-color: @secondary-col !important;
   
-  &:hover {
-    background-color: @secondary-light;
-    border-color: @secondary-light;
+  &:hover, &:active, &:focus {
+    background-color: @secondary-light !important;
+    border-color: @secondary-light !important;
   }
+}
+
+.btn-primary {
+  margin-top: 25px;
+  padding: 5px 25px;
 }
