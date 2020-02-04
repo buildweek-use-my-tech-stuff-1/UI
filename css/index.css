@@ -164,6 +164,17 @@ body {
   margin: 40px 0;
   padding: 15px;
 }
+@media only screen and (max-width: 500px) {
+  .container .my-card-cont .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .my-card-cont .card:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+}
 .container .my-card-cont .card .person-img {
   max-width: 200px;
 }
@@ -172,6 +183,11 @@ body {
   border-radius: 50%;
   opacity: 0.9;
   transition: 0.25s ease-in;
+}
+@media only screen and (max-width: 500px) {
+  .container .my-card-cont .card .person-img img {
+    margin-bottom: 30px;
+  }
 }
 .container .my-card-cont .card .person-img img:hover {
   transform: scale(1.05);
