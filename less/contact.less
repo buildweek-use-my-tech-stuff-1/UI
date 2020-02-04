@@ -1,7 +1,6 @@
 .mb-4 {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
-  box-sizing: border-box;
 
   @media @tablet {
     width: 80%;
@@ -14,9 +13,6 @@
   }
 
   .col-md-3 .mb-0 li {
-    margin: 0 20px;
-    max-width: 100%;
-    
     p {
       font-size: 1.2rem;
     }
@@ -24,12 +20,12 @@
 }
 
 .btn-primary {
-  background-color: @secondary-col;
-  border-color: @secondary-col;
+  background-color: @secondary-col !important;
+  border-color: @secondary-col !important;
   
-  &:hover {
-    background-color: @secondary-light;
-    border-color: @secondary-light;
+  &:hover, &:active, &:focus {
+    background-color: @secondary-light !important;
+    border-color: @secondary-light !important;
   }
 }
 
