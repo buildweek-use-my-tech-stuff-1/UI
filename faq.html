@@ -14,28 +14,40 @@
     <title>Tech Stuff - FAQ</title>
 </head>
 <body>
+
 <nav class="navbar navbar-expand-sm py-4 sticky-top">
+
     <a class="navbar-brand" href="./index.html"><h3>Tech Stuff</h3></a>
+
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navCollapse">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navCollapse">
     <ul class="navbar-nav ml-auto">
         <li class="nav-item"><a href="./index.html"><h4>Home</h4></a></li>
         <li class="nav-item"><a href="./reviews.html"><h4>Reviews</h4></a></li>
-        <li class="nav-item"><a href="#app"><h4>Get Started</h4></a></li>
         <li class="nav-item"><a href="./contact.html"><h4>Contact Us</h4></a></li>
         <li class="nav-item active"><a href="#"><h4>FAQ</h4></a></li>
+        <li class="nav-item pad"><button class="btn btn-primary" href="#">Sign Up</button></li>
+        <li class="nav-item pad"><button class="btn btn-primary" href="#">Sign In</button></li>
     </ul>
+  </div>
 </nav>
-<div class="container"><h2>Frequently Asked Questions</h2></div>
-<div class="container" id="accordion">
+
+<div class="faq">
+<div class="container title"><h2>Frequently Asked Questions</h2></div>
+<div class="container prime-bg" id="accordion">
 
     <div class="card">
       <div class="card-header" data-toggle="collapse" href="#faq1">
         <a class="card-link" >
-          Collapsible Group Item #1
+          I'm thinking of renting out my equipment, is it safe?
         </a>
       </div>
       <div id="faq1" class="collapse" data-parent="#accordion">
         <div class="card-body">
-          <p>Lorem ipsum..</p>
+          <p>Yes! The renter is responsible for all lost/damaged equipment.</p>
         </div>
       </div>
     </div>
@@ -43,12 +55,12 @@
     <div class="card">
       <div class="card-header" data-toggle="collapse" href="#faq2">
         <a class="collapsed card-link">
-          Collapsible Group Item #2
+          I'm considering renting, how long does it take to receive the equipment?
         </a>
       </div>
       <div id="faq2" class="collapse" data-parent="#accordion">
         <div class="card-body">
-          Lorem ipsum..
+         <p> It depends on method of acquisition. In most cases, we pair you with local rentals if possible. Some people will ship their equipment for an additional cost.</p>
         </div>
       </div>
     </div>
@@ -56,70 +68,57 @@
     <div class="card">
       <div class="card-header" data-toggle="collapse" href="#faq3">
         <a class="collapsed card-link">
-          Collapsible Group Item #3
+          I need to keep the equipment longer than expected. What do I do?
         </a>
       </div>
       <div id="faq3" class="collapse" data-parent="#accordion">
         <div class="card-body">
-          Lorem ipsum..
+         <p>You can easily pay for an extension on the rental agreement. See your account info for details.</p>
         </div>
       </div>
     </div>
     <div class="card">
         <div class="card-header" data-toggle="collapse" href="#faq4">
           <a class="collapsed card-link">
-            Collapsible Group Item #3
+            What happens if the equipment I rented Arrives defective?
           </a>
         </div>
         <div id="faq4" class="collapse" data-parent="#accordion">
           <div class="card-body">
-            Lorem ipsum..
+           <p>If you receive equipment and it does not work as described, put in a claim with our support staff immediately and provide details.</p>
           </div>
         </div>
       </div>
       <div class="card">
         <div class="card-header" data-toggle="collapse" href="#faq5">
           <a class="collapsed card-link">
-            Collapsible Group Item #3
+            What if I want to get rid of the equipment I'm renting out?
           </a>
         </div>
         <div id="faq5" class="collapse" data-parent="#accordion">
           <div class="card-body">
-            Lorem ipsum..
+            <p>You may post your Item as rent to own, and the renter can make payments until the entire amount is fulfilled. Alternatively we may buy it from you if it is in great condition.</p>>
           </div>
         </div>
       </div>
       <div class="card">
         <div class="card-header" data-toggle="collapse" href="#faq6">
           <a class="collapsed card-link">
-            Collapsible Group Item #3
+            What if the equipment I'm renting gets damanged to no fault of my own?
           </a>
         </div>
         <div id="faq6" class="collapse" data-parent="#accordion">
           <div class="card-body">
-            Lorem ipsum..
+           <p>As per the rental agreement you assume full responsibility. We do offer partial coverage insurance at an additional cost.</p>
           </div>
         </div>
       </div>
-      <div class="card">
-        <div class="card-header" data-toggle="collapse" href="#faq7">
-          <a class="collapsed card-link">
-            Collapsible Group Item #3
-          </a>
-        </div>
-        <div id="faq7" class="collapse" data-parent="#accordion">
-          <div class="card-body">
-            Lorem ipsum..
-          </div>
-        </div>
-      </div>
-  
   </div>
-
+</div>
 <footer class="sticky-bottom">
     <div class="social">
         <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-        <a href="#"><ion-icon name="logo-instagram"></ion-icon></>
+        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
         <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
         <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
     </div>

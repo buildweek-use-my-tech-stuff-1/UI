@@ -1,35 +1,34 @@
-body {
-  background-color: @background-col;
-  font-size: 62.5%;
-  height: 100%;
-  min-width: 100%;
-}
-
 .navbar {
   background-color: @primary-col;
-
   .navbar-brand {
       color: @accent-col;
-
       &:hover {
           color: @secondary-col;
       }
-
           &:focus {
               outline: none;
           }
           @media @tablet {
               display: none;
           }
+          @media @nav-xs {
+              display: none;
+          }
   }
+    .navbar-toggler {
+        color: @accent-col;
+        padding-bottom: 0.7rem;
+        &:focus {
+            outline: none;
+        }
+    }
 
   ul {
-      width: 50%;
+      width: 100%;
       margin-right: auto;
       border: none;
-
   li {
-    @media @mobile {
+    @media @nav-only-mobile {
       text-align: center;
       min-width: 100%;
       padding: 15px;
@@ -37,8 +36,26 @@ body {
 
       &:first-child { border-top: 1px solid @accent-col; }
     }
+    .pad {
+        padding-top: 0;
+        margin-top: 0;
+        @media @mobile {
+           width: 100%;
+           margin-right: 0;
+           margin-left: 0;
+           padding-right: 0;
+           padding-left: 0;
+        }
   }
+  button {
+    color: @background-col;
+    min-width: 100%;
+    margin: 0;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
 
+}
+}
   a {
       text-decoration: none;
       border: none;
