@@ -8,25 +8,40 @@
 <link rel="stylesheet" href="css/index.css">
 
 <script src="https://kit.fontawesome.com/85c3f411d3.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
 <title>Tech Stuff</title>
 </head>
 
 
 <body id="home">
+
     <nav class="navbar navbar-expand-sm py-4 sticky-top">
-        <a class="navbar-brand" href="#"><h3>Tech Stuff</h3></a>
+  
+        <a class="navbar-brand" href="./index.html"><h3>Tech Stuff</h3></a>
+    
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navCollapse">
+          <i class="fas fa-bars"></i>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navCollapse">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item active"><a href="#"><h4>Home</h4></a></li>
             <li class="nav-item"><a href="./reviews.html"><h4>Reviews</h4></a></li>
-            <li class="nav-item"><a href="#app"><h4>Get Started</h4></a></li>
             <li class="nav-item"><a href="./contact.html"><h4>Contact Us</h4></a></li>
             <li class="nav-item"><a href="./faq.html"><h4>FAQ</h4></a></li>
+            <li class="nav-item pad"><button class="btn btn-primary" href="#">Sign Up</button></li>
+            <li class="nav-item pad"><button class="btn btn-primary" href="#">Sign In</button></li>
         </ul>
+      </div>
     </nav>
 
 
-<div class="para-header"><h3 class="first-text">Welcome To</h3><h3 class="second-text">Tech Stuff</h3></div>
 
+
+<div class="para-header"><h3 class="first-text">Welcome To</h3><h3 class="second-text">Tech Stuff</h3></div>
 
 <div class="container">
     <h2>Our Mission</h2>
@@ -45,7 +60,7 @@
 <footer class="sticky-bottom">
     <div class="social">
         <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-        <a href="#"><ion-icon name="logo-instagram"></ion-icon></>
+        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
         <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
         <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
     </div>
